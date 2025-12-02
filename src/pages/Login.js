@@ -10,8 +10,8 @@ export const Login = () => {
   const email = useRef();
   const password = useRef();
   async function handleLoginAsGuest() {
-    email.current.value = "nikunj.jain@gmail.com";
-    password.current.value = "password";
+    email.current.value = REACT_APP_GUEST_LOGIN;
+    password.current.value = REACT_APP_GUEST_PASSWORD;
     const authDetail = {
       email: email.current.value,
       password: password.current.value,
